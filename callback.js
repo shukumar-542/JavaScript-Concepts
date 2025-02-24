@@ -27,8 +27,9 @@ const start = (callback) => {
 };
 
 
-const step2 = (callback)=>{
+const step2 = (text,callback)=>{
     console.log("Login Successfully!");
+    console.log(text);
     callback();
 }
 const step3=()=>{
@@ -36,5 +37,8 @@ const step3=()=>{
 }
 
 start(()=>{
-    step2(()=>step3())
+    step2( "Wow" , ()=>step3())
 })
+
+
+
