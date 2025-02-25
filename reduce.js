@@ -13,4 +13,15 @@ const maxValue = numbers.reduce((max, current)=>{
     return max;
 })
 
-console.log(maxValue);
+// merge different object in a single object
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const obj3 = { e: 5, f: 6 };
+
+
+const mergeObject = [obj1 , obj2 , obj3].reduce((newObj , currentObj)=>{
+    return { ...newObj , ...currentObj }
+})
+
+
+console.log(mergeObject);
