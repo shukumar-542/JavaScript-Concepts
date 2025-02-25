@@ -21,7 +21,36 @@ const obj3 = { e: 5, f: 6 };
 
 const mergeObject = [obj1 , obj2 , obj3].reduce((newObj , currentObj)=>{
     return { ...newObj , ...currentObj }
-})
+}, {})
+
+// Grouping brand according their name
+const shoppingCart = [
+    {name: 'Apple', price: 1.99, quantity: 3},
+    {name: 'Apple', price: 1.99, quantity: 3},
+    {name: 'Xiaomi', price: 2.99, quantity: 2},
+    {name: 'Samsung', price: 3.99, quantity: 1},
+    {name: 'Tesla', price: 3.99, quantity: 1},
+    {name: 'Tesla', price: 4.99, quantity: 4},
+    {name: 'Nokia', price: 4.99, quantity: 4},
+]
 
 
-console.log(mergeObject);
+const productGroup = shoppingCart.reduce((groupProduct , product)=>{
+    
+    const name = product.name
+    if(groupProduct[name] == null){
+        groupProduct[name] = []
+    }
+    groupProduct[name].push(product)
+    
+    return groupProduct
+    
+},{})
+
+
+
+
+
+
+
+console.log(productGroup);
