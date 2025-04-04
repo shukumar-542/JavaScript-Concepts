@@ -42,4 +42,18 @@ function greeting (message){
 }
 const hello = greeting("Hi");
 
-hello("Shukumar")
+// hello("Shukumar")
+
+
+// ==== Create custom timer using closure
+
+const timer  = ()=>{
+    let count  =  0;
+    return ()=>{
+        count = count + 2;
+        console.log(count);
+    }
+}
+
+const second = timer();
+setInterval(second , 1000)
