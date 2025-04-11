@@ -39,3 +39,13 @@ const bio = [address , phone]
 // printName.apply(person , bio)
 
 
+// new binding
+
+function Person (name , city){
+    this.name = name,
+    this.city = city
+    console.log(`Name : ${this.name} city ${this.city}`)
+}
+
+const shukumar = new Person("Shukumar" , "Dhake")
+const Manik = new Person("manik" , "Dhaka")
