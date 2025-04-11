@@ -33,6 +33,9 @@ const person ={
 
 const phone = "01872999038"
 const address = "Jhenaidah"
-printName.call(person , address , phone)
+const newFunc = printName.bind(person , address , phone)
+newFunc()
+const bio = [address , phone]
+// printName.apply(person , bio)
 
 
