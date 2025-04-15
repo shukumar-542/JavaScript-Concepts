@@ -47,5 +47,8 @@ function Person (name , city){
     console.log(`Name : ${this.name} city ${this.city}`)
 }
 
-const shukumar = new Person("Shukumar" , "Dhake")
-const Manik = new Person("manik" , "Dhaka")
+// const shukumar = new Person("Shukumar" , "Dhake")
+// const Manik = new Person("manik" , "Dhaka")
+
+//============= Window binding ============//
+
