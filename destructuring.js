@@ -35,7 +35,7 @@ const updateUserInfo = users?.map(user=>{
             ...user,
             address : {
                 city : user?.address.city,
-                zip : 300.
+                zip : 300
             }
         }
 
