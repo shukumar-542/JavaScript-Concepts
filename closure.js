@@ -48,7 +48,7 @@ const hello = greeting("Hi");
 // ==== Create custom timer using closure
 
 const timer  = ()=>{
-    let count  =  0;
+  let count  =  0;
     return ()=>{
         count = count + 2;
         console.log(count);
