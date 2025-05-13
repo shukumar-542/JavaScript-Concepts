@@ -11,7 +11,7 @@ setTimeout(() => {
   console.log("Wait 1 second: ⏱️ 1 second passed");
 
   setTimeout(() => {
-    console.log("Wait 2 second: ⏱️ 2 second passed");
+    console.log("Wait 3 second: ⏱️ 3 second passed");
     setTimeout(() => {
       console.log("Wait 4 second: ⏱️ 4 second passed");
     }, 1000);
