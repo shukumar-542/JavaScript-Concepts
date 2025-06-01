@@ -58,3 +58,22 @@ const result = sortedValue.map(val =>
 console.log(Object.keys(obj))
 
 
+
+const Welcome  = ()=> console.log("Hello This is Shukumar");
+
+function once (fn){
+    let called  = false;
+    return function (){
+        if(!called){
+        called = true;
+        return fn();
+    }else {
+        console.log("already called , skipping...");
+    }
+}
+}
+
+// const result = once(Welcome)
+result()
+result()
+result()
