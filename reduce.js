@@ -51,6 +51,16 @@ const productGroup = shoppingCart.reduce((groupProduct , product)=>{
 
 
 
+// how many time same word in the array
+const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
 
+const wordCount  = words.reduce((acc , word)=>{
+    if(acc[word]){
+        acc[word]++
+    }else{
+        acc[word] = 1
+    }
+    return acc
+},{})
 
-console.log(productGroup);
+console.log(wordCount)
