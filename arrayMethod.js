@@ -13,5 +13,17 @@ const users = [
 
 
 const resutl = users.some(user => user.age >= 18)
-const resultEvery = users.every(user => user.age >= 18)
-console.log(resultEvery)
+const resultEvery = users.every(user => user.age >= 18)   
+// console.log(resultEvery)
+
+// Find index
+
+const products = [
+  { id: 1, name: "Laptop", price: 1200 },
+  { id: 2, name: "Phone", price: 800 },
+  { id: 3, name: "Tablet", price: 400 }
+]
+
+// ❓ Use .findIndex() to get the index of the product named "Phone".
+const phoneIndex =  products.findIndex(prodcut => prodcut.name === "Phone");
+console.log(phoneIndex)
