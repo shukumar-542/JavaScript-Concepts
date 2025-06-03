@@ -5,11 +5,13 @@ const getter = numbers.find(number =>  number > 50);
 
 // Some Method
 const users = [
-  { name: "Alice", age: 17 },
-  { name: "Bob", age: 20 },
-  { name: "Charlie", age: 15 },
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 19 },
+  { name: "Charlie", age: 18 },
+  { name: "Dave", age: 17 }
 ];
 
 
 const resutl = users.some(user => user.age >= 18)
-console.log(resutl)
+const resultEvery = users.every(user => user.age >= 18)
+console.log(resultEvery)
