@@ -24,7 +24,7 @@ const updateCityAndZip = {
 // console.log(updateCityAndZip);
 
 const users = [
-    { name: "Shukumar", address: { city: "Dhaka", zip: 1207 } },
+    { name: "shukumar", address: { city: "Dhaka", zip: 1207 } },
     { name: "Rita", address: { city: "Khulna", zip: 1612 } }
   ];
 
