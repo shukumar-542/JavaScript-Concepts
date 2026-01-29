@@ -26,4 +26,4 @@ const getterNumber =  nums.reduce((acc , current)=> {
         return acc = current
     }
     return acc
-}, 0)
+}, nums[0])
