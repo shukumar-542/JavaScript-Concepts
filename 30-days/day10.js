@@ -22,6 +22,7 @@ console.log(...arr1, ...arr2)
 
 
 // 📝 Task 5 (Important 💪)
+
 const user = { name: "Alex", age: 25 }
 user.role = "Developer"
 user.age = 30
