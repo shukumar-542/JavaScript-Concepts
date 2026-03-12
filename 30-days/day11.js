@@ -52,8 +52,8 @@ const createGreating = (greetingWord) =>{
 }
 
 
-const greetInEnglish = createGreating("Hello")
-const greetInSpanish = createGreating("Hola")
+// const greetInEnglish = createGreating("Hello")
+// const greetInSpanish = createGreating("Hola")
 
 // greetInEnglish("Alex")
 // greetInSpanish("Alex")
@@ -100,7 +100,7 @@ const intervalId = setInterval(()=>{
 // Task 4 – Simulating API Call
 
 
-const fetchData = () => {
+const fetchDatas = () => {
     return new Promise((resolve) => {
         setTimeout(() => {  
             resolve("Data fetched successfully!")
@@ -111,7 +111,7 @@ const fetchData = () => {
 
 const getData = async () => {
     console.log("Fetching data...")
-    const data = await fetchData()
+    const data = await fetchDatas()
     console.log(data)
 }
 
@@ -120,24 +120,16 @@ const getData = async () => {
 
 // Task 5 – Callback with setTimeout (Important 💪)
 
-// Flow:
 
-// Print "Fetching data...".
 
-// After 2 seconds, run the callback.
-
-// The callback should print:
-
-// "Data fetched successfully!"
-
-const fetchDataWithCallback = (callback) => {
+const fetchData = (callback) => {
     console.log("Fetching data...")
     setTimeout(() => {
         callback("Data fetched successfully!")
     }, 2000)
 }
 
-fetchDataWithCallback((message) => {
+fetchData((message) => {
     console.log(message)
 })
 
